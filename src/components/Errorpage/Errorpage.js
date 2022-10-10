@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Errorpage.css'
 
 const Errorpage = () => {
@@ -11,7 +12,7 @@ const Errorpage = () => {
                     <p>Please, check the URL in the address bar and try again.</p>
                 </div>
             </div>
-            <button className='btn-home'>Go Back Home</button>
+            <Link to={'/'}><button className='btn-home'>Go Back Home</button></Link>
         </div>
     );
 };
