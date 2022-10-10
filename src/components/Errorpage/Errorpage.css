@@ -1,0 +1,33 @@
+.error{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 200px;
+}
+.number{
+color: blueviolet;
+font-size: 55px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.text{
+    margin-left: 30px;
+}
+.text p{
+    margin-top: 10px;
+}
+.page{
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+.btn-home{
+    color: white;
+    background-color: blueviolet;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+.btn-home:hover{
+    background-color: blue;
+}
