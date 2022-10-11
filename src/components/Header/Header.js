@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const h1 = () => {
     return (
         <div>
-            <h1>this is a header</h1>
+            
         </div>
     );
 };
