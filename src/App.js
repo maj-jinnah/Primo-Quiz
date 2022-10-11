@@ -7,6 +7,7 @@ import Main from './Layout/Main';
 import Errorpage from './components/Errorpage/Errorpage';
 import Topics from './components/Topics/Topics';
 import Statistics from './components/Statistics/Statistics';
+import TopicQuizDetails from './components/TopicQuizDetails/TopicQuizDetails';
 
 
 function App() {
@@ -26,13 +27,21 @@ function App() {
           element: <Blog></Blog>
         },
         {
-        path: '/about',
-        element: <About></About>
+          path: '/about',
+          element: <About></About>
         },
         {
           path: '/topics',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Topics></Topics>
+        },
+        {
+          path: '/topic/:topicId',
+          loader: ({ params }) => {
+            // console.log(params.topicId)
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`)
+          },
+          element: <TopicQuizDetails></TopicQuizDetails>
         },
         {
           path: '/statistics',
@@ -49,7 +58,7 @@ function App() {
 
   return (
     <div className="App">
-        <RouterProvider router= {router}></RouterProvider>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
