@@ -14,7 +14,7 @@ const Header = () => {
                         title="Company"
                         className="inline-flex items-center"
                     >
-                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+                        <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 ">
                             PrimoQuiz
                         </span>
                     </Link>
