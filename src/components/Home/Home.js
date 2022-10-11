@@ -1,10 +1,11 @@
 import React from 'react';
+import Statistics from '../Statistics/Statistics';
 import Topics from '../Topics/Topics';
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home!</h1>
+            <Topics></Topics>
         </div>
     );
 };
