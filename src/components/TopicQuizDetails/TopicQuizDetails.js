@@ -10,12 +10,12 @@ const TopicQuizDetails = () => {
     // console.log(questions)
 
     return (
-        <div>
-            <h1 className='my-5 text-3xl font-semibold text-violet-500'>Quiz of {quizName}</h1>
+        <div className=''>
+            <h1 className='my-5 text-4xl font-semibold text-violet-500'>Quiz of {quizName}</h1>
             {
-                questions.map( question => <Question
-                    key={question.id}
-                    question = {question}
+                questions.map( query => <Question
+                    key={query.id}
+                    query = {query}
                 ></Question>)
             }
         </div>
