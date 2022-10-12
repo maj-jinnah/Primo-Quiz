@@ -7,10 +7,10 @@ const Home = () => {
     return (
         <div>
             <div className=''>
-                <img src={img} alt="" className='w-full h-full mt-8 rounded-lg ' />
-                <div className='relative'>
-                    <h1>Welcome! to Primo Quiz.</h1>
-                    <p>Here, you will test your skill. We have best quility quiz.</p>
+                <img src={img} alt="" className='w-full h-96 mt-8 rounded-lg'/>
+                <div className='w-3/4 mx-auto'>
+                    <h1 className='mt-5 text-5xl font-bold mb-3'>Welcome! to Primo Quiz</h1>
+                    <p className='text-lg'>Here, you could test your skill. We have different types of topics that, could help you to test yourself. We are offering the best quality. Why you are waiting? Give it a try.</p>
                 </div>
             </div>
             <Topics></Topics>
