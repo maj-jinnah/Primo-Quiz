@@ -7,7 +7,6 @@ const TopicQuizDetails = () => {
     const quizName = topicQuizDetails.data.name
 
     const questions = topicQuizDetails.data.questions
-    // console.log(questions)
 
     return (
         <div className=''>

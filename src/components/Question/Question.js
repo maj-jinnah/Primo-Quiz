@@ -1,18 +1,21 @@
 import React from 'react';
+import { toast } from 'react-toastify';
+import './Question.css'
 
 const Question = ({ query }) => {
-    // console.log(query);
 
     const { correctAnswer, options, question } = query
     const qus = question.replace(/(<([^>]+)>)/ig, '');
-    console.log(options)
+    let isAnswerCorrect;
 
     const isCorrect = (answer)=>{
         if(answer === correctAnswer){
-            console.log('correct answer')
+            isAnswerCorrect = true
+            toast.success('Yore answer is correct!')
         }
         else{
-            console.log('wrong answer')
+            isAnswerCorrect = false
+            toast.warning('Sorry, wrong answer.')
         }
     }
 
