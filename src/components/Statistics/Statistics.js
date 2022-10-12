@@ -7,7 +7,7 @@ const Statistics = () => {
     const topics = topicsData.data
     
     return (
-        <div >
+        <div className='mt-20'>
             <ResponsiveContainer width='90%' height={500} className='mx-auto'>
                 <LineChart width={600} height={300} data={topics} margin={{ top: 50, right: 20, bottom: 50, left: 0 }}>
                     <Line type="monotone" dataKey="total" stroke="#8884d8" />

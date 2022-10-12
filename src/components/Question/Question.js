@@ -35,7 +35,7 @@ const Question = ({ query }) => {
 
 
     return (
-        <div className='mb-10 py-10 px-4 w-3/4 mx-auto rounded-lg bg-purple-100 shadow-gray-500 shadow-xl relative'>
+        <div className='mb-10 mt-10 py-10 px-4 w-3/4 mx-auto rounded-lg bg-purple-100 shadow-gray-500 shadow-xl relative'>
             <h2 className='lg:text-2xl md:text-2xl sm:text-xl text-purple-800'>{qus}</h2>
             <button onClick={eyeButtonClick} className='absolute right-8 top-3 mb-1'><EyeIcon className="h-6 w-6 text-blue-500" /></button>
 
