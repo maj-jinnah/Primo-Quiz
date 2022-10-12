@@ -9,7 +9,7 @@ const TopicQuizDetails = () => {
     const questions = topicQuizDetails.data.questions
 
     return (
-        <div className='mt-10'>
+        <div className='mt-20'>
             <h1 className='my-5 text-4xl font-semibold text-violet-500'>Quiz of {quizName}</h1>
             {
                 questions.map( query => <Question
